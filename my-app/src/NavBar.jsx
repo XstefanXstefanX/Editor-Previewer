@@ -14,7 +14,7 @@ class NavBar extends React.Component{
                         <li>EN/US <i>Flag</i></li>
                         <li><i>Search</i></li>
                         <li><i>Guy</i> Sign in</li>
-                        <li><i>Cart</i> 0</li>
+                        <li><FontAwesomeIcon icon="fa-solid fa-bag-shopping" /> 0</li>
                     </ul>
                 <div id='drop-menu'></div>
             </div>
