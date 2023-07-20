@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+#list-menu {
+    width: 100%;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 30px;
+    list-style: none;
+    position: absolute;
+    font-size: 0.9rem;
+    background: #d3d1d1;
+    padding: 3px 10px;
+}
+#list-menu li:nth-child(6){
+    padding-right: 100px;
+}
+
