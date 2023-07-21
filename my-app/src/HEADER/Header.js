@@ -34,8 +34,8 @@ class Header extends React.Component {
         </ul>
         <header>
             <div className="nav-area">
-                <a href='/' className="log">
-                    Logo
+                <a href='/' className="logo">
+                    <img className='image' src='https://cdn.iconscout.com/icon/free/png-256/free-marshall-31-283429.png?f=webp'/>
                 </a>
                 <Navbar/>
             </div>
