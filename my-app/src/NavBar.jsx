@@ -14,15 +14,20 @@ class NavBar extends React.Component{
                     <ul id='list-menu'>
                         <li>MyMarshall</li>
                         <li>Local Retailers</li>
-                        <li>EN|US <FontAwesomeIcon icon={faFlag}/></li>
-                        <li><FontAwesomeIcon icon={faMagnifyingGlass} /></li>
-                        <li><FontAwesomeIcon icon={faUser} /> Sign in</li>
-                        <li><FontAwesomeIcon icon={faBagShopping} /> 0</li>
+                        <li><LanguageSelector /></li>
+                        <li><FontAwesomeIcon icon={faMagnifyingGlass} className='icon'/></li>
+                        <li><FontAwesomeIcon icon={faUser}  className='icon'/> Sign in</li>
+                        <li><FontAwesomeIcon icon={faBagShopping}  className='icon'/> 0</li>
                     </ul>
                 <div id='drop-menu'></div>
             </div>
         );
     }
+}
+const LanguageSelector = () => {
+    return (
+        <div>EN|US <FontAwesomeIcon icon={faFlag}  className='icon'/></div>
+    );
 }
 
 

@@ -2,30 +2,40 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+.icon{
+    font-size: 1rem;
+}
 #list-menu {
+    height: 30px;
     width: 100%;
     font-weight: 400;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     gap: 30px;
-    position: relative;
     list-style: none;
-    position: absolute;
     font-size: 0.9rem;
     background: #d3d1d1;
     padding: 3px 10px;
 }
 #list-menu li:nth-child(6){
-    padding-right: 100px;
+    margin-right: 100px;
+}
+#list-menu li {
+    position: relative;
 }
 #list-menu li::after{
-    border: 1px solid black;
     content: '';
-    width: 2px;
-    height: 20px;
-    background: #000;
     position: absolute;
-    right: 10px;
+    left: 50%;
+    bottom: 1px;
+    width: 0px; 
+    height: 2px;
+    background: #333;
+    transition: 0.2s;
+}
+#list-menu li:hover:after{
+    width: 100%;
+    left: 0;
 }
 
