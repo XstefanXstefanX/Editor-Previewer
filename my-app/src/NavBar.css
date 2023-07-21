@@ -9,6 +9,7 @@
     flex-direction: row;
     justify-content: flex-end;
     gap: 30px;
+    position: relative;
     list-style: none;
     position: absolute;
     font-size: 0.9rem;
@@ -17,5 +18,14 @@
 }
 #list-menu li:nth-child(6){
     padding-right: 100px;
+}
+#list-menu li::after{
+    border: 1px solid black;
+    content: '';
+    width: 2px;
+    height: 20px;
+    background: #000;
+    position: absolute;
+    right: 10px;
 }
 

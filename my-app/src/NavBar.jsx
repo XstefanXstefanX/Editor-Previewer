@@ -1,6 +1,9 @@
 import './NavBar.css';
 import React from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBagShopping, faUser, faMagnifyingGlass, faFlag} from '@fortawesome/free-solid-svg-icons';
+
 class NavBar extends React.Component{
     constructor(props){
         super(props);
@@ -11,10 +14,10 @@ class NavBar extends React.Component{
                     <ul id='list-menu'>
                         <li>MyMarshall</li>
                         <li>Local Retailers</li>
-                        <li>EN/US <i>Flag</i></li>
-                        <li><i>Search</i></li>
-                        <li><i>Guy</i> Sign in</li>
-                        <li><FontAwesomeIcon icon="fa-solid fa-bag-shopping" /> 0</li>
+                        <li>EN|US <FontAwesomeIcon icon={faFlag}/></li>
+                        <li><FontAwesomeIcon icon={faMagnifyingGlass} /></li>
+                        <li><FontAwesomeIcon icon={faUser} /> Sign in</li>
+                        <li><FontAwesomeIcon icon={faBagShopping} /> 0</li>
                     </ul>
                 <div id='drop-menu'></div>
             </div>
