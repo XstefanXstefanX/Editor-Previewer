@@ -1,7 +1,7 @@
-import NavBar from './Navbar/NavBar';
+import Header from './HEADER/Header';
 const App = () => {
     return (
-        <NavBar/>
+        <Header/>
     )
 };
 
