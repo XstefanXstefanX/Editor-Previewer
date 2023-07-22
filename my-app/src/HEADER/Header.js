@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from './Navbar';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,9 +9,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div id="nav-bar">
@@ -34,10 +30,9 @@ class Header extends React.Component {
         </ul>
         <header>
             <div className="nav-area">
-                <a href='/' className="logo">
-                    <img className='image' src='https://cdn.iconscout.com/icon/free/png-256/free-marshall-31-283429.png?f=webp'/>
+                <a href='/'>
+                    <img className='image' alt='logo' src='https://cdn.iconscout.com/icon/free/png-256/free-marshall-31-283429.png?f=webp'/>
                 </a>
-                <Navbar/>
             </div>
         </header>
       </div>
