@@ -44,7 +44,52 @@ export const menuItems = [
   {
     title: "Amps",
     url: "/",
-    submenu: [{}],
+    submenu: [
+      {
+        title: 'Amps',
+        url: '/' 
+      },
+      {
+        title: 'Studio',
+        url: '/' 
+      },
+      {
+        title: 'Origin',
+        url: '/' 
+      },
+      {
+        title: 'DSL',
+        url: '/' 
+      },
+      {
+        title: 'CODE',
+        url: '/' 
+      },
+      {
+        title: 'JVM',
+        url: '/' 
+      },
+      {
+        title: 'Handwired',
+        url: '/' 
+      },
+      {
+        title: 'Vintage Reissues',
+        url: '/' 
+      },
+      {
+        title: 'Acoustic',
+        url: '/' 
+      },
+      {
+        title: 'MG Gold',
+        url: '/' 
+      },
+      {
+        title: 'Micro Amp',
+        url: '/' 
+      }
+    ],
   },
   {
     title: "Speakers & Headphones",

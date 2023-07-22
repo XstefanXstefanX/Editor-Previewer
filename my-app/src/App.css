@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;900&display=swap");
+:root{
+  --uppernav-color: #d3d1d1;
+  --underline-color: #b8ae79;
+  --navMain-color: #ffffff;
+}
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -15,7 +20,7 @@
   gap: 30px;
   list-style: none;
   font-size: 0.9rem;
-  background: #d3d1d1;
+  background: var(--uppernav-color);
   padding: 3px 10px;
 }
 #list-menu li:nth-child(6) {
@@ -32,7 +37,7 @@
   bottom: 1px;
   width: 0px;
   height: 4px;
-  background: #b8ae79;
+  background: var(--underline-color);
   transition: 0.2s;
 }
 #list-menu li:hover:after,.menuButton:hover:after{
@@ -43,9 +48,9 @@
 /* LOWER NAV-BAR */
 
 header {
-  background: #ffffff;
+  background: var(--navMain-color);
   width: 100vw;
-  border-bottom: 5px solid #b8ae79;
+  border-bottom: 5px solid var(--underline-color);
   color: #000000;
 }
 .image{
@@ -55,8 +60,7 @@ header {
 video {
   position: absolute;
   z-index: -1;
-  top: 0px;
-  max-height: 100vh;
+  height: 95%;
   width: 100%;
   object-fit:cover;
 }
@@ -68,7 +72,7 @@ video {
   width: 100%;
   height: 300px;
   display: none;
-  background: #ffffff;
+  background: var(--navMain-color);
 }
 .drop.show{
   display: block;
@@ -98,4 +102,20 @@ a{
 }
 .nav-bar{
   width: 100%;
+}
+button{
+  background: var(--navMain-color);
+}
+.rotatedSquare{
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  background: var(--underline-color);
+  position: absolute;
+  top: calc(95% - 25px);
+  left: 50%;
+}
+.video{
+  position: relative;
+  height: 400px;
 }
