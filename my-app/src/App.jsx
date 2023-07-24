@@ -1,4 +1,5 @@
 import Header from "./HEADER/Header";
+import ImageMarket from './CONTENT/ImageMarket';
 const App = () => {
   return (
     <div className="App">
@@ -11,8 +12,11 @@ const App = () => {
             src="https://cdne-marshall-assets.azureedge.net/content/uploads/8a0d1cfb-2e6a-40f3-90cb-26b0b5501d31.mp4?20210924124101"
           />
         </video>
-        <div className="rotatedSquare"></div>
+        <div className="rotatedSquare">
+          <div className="tick"></div>
+        </div>
       </div>
+      <ImageMarket/>
     </div>
   );
 };
