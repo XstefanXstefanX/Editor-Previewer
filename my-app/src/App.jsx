@@ -1,22 +1,23 @@
 import Header from "./HEADER/Header";
-import ImageMarket from './CONTENT/ImageMarket';
+import ImageMarket from "./CONTENT/ImageMarket";
+
 const App = () => {
   return (
     <div className="App">
       {/*Still in need of some changes in Header :(*/}
       <Header />
-      <div className="video">
+      <div className="videoContainer">
         <video autoPlay loop muted className="videoBg">
           <source
             type="video/mp4"
-            src="https://cdne-marshall-assets.azureedge.net/content/uploads/8a0d1cfb-2e6a-40f3-90cb-26b0b5501d31.mp4?20210924124101"
+            src="https://cdne-marshall-assets.azureedge.net/content/uploads/07d9e2c0-b2a9-4d54-b0d6-8e0d6cfda4c6.mp4?20210924124105"
           />
         </video>
-        <div className="rotatedSquare">
+        <button className="rotatedSquare" id='square'>
           <div className="tick"></div>
-        </div>
+        </button>
       </div>
-      <ImageMarket/>
+      <ImageMarket />
     </div>
   );
 };
