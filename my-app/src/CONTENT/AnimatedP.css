@@ -1,0 +1,24 @@
+.container{
+    padding: 100px;
+    display: grid;
+    row-gap: 100px;
+    grid-template-columns: 1fr 1fr;
+    > img{
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        transition: 300ms linear;
+    }
+    > p {
+        font-size: 1.5rem;
+        width: 500px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 500px;
+    }
+    >img:hover{
+        transform: rotate(20deg);
+        translate: 50px;
+    }
+}
