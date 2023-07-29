@@ -1,24 +1,36 @@
-.container{
-    padding: 100px;
-    display: grid;
-    row-gap: 100px;
-    grid-template-columns: 1fr 1fr;
-    > img{
-        width: 500px;
-        height: 500px;
-        object-fit: cover;
-        transition: 300ms linear;
+.container {
+  padding: 100px;
+  display: flex;
+  flex-flow: wrap row;
+  column-gap: 30px;
+  
+  > .Item {
+
+    > .description {
+      width: 500px;
+      height: 500px;
+      text-align: justify;
+      > h1 {
+        font-size: 40px;
+      }
+      > button {
+        padding: 5px 15px;
+        color: var(--underline-color);
+        height: 40px;
+        font-size: 1em;
+        text-transform: uppercase;
+        border: var(--underline-color) 1px solid;
+      }
+      > button:hover {
+        color: #000000;
+        border-color: #000000;
+        cursor: pointer;
+      }
     }
-    > p {
-        font-size: 1.5rem;
-        width: 500px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        height: 500px;
-    }
-    >img:hover{
-        transform: rotate(20deg);
-        translate: 50px;
-    }
+  }
+  > img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+  }
 }
