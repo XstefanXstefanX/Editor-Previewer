@@ -15,7 +15,7 @@ const UpperHeader = () => {
       <li>
         EN|US <FontAwesomeIcon icon={faFlag} className="icon" />
       </li>
-      <li>
+      <li id="searchIcon">
         <FontAwesomeIcon icon={faMagnifyingGlass} className="icon" />
       </li>
       <li>
@@ -27,5 +27,4 @@ const UpperHeader = () => {
     </ul>
   );
 };
-
 export default UpperHeader;

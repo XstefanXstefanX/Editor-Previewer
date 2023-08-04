@@ -1,19 +1,22 @@
 .container {
-  padding: 100px;
+  padding: 0 100px;
   display: flex;
   flex-flow: wrap row;
   column-gap: 30px;
-  
-  > .Item {
 
+  > .Item {
     > .description {
       width: 500px;
       height: 500px;
-      text-align: justify;
+      > p {
+        text-align: justify;
+      }
       > h1 {
-        font-size: 40px;
+        font-size: 35px;
+        width: 100%;
       }
       > button {
+        margin-top: 20px;
         padding: 5px 15px;
         color: var(--underline-color);
         height: 40px;

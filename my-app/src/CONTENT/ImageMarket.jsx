@@ -4,7 +4,7 @@ const ImageMarket = () => {
   return (
     <div className="content">
       <div className="TopImages">
-        <div id="ImageWrapper1">
+        <div id="ImageWrapper1" className="card">
           <a href="/">
             <img
               src="https://cdne-marshall-assets.azureedge.net/content/uploads/cb1a6a90-d1cf-46b5-9d43-1892d2233eb9.jpg"
@@ -13,7 +13,7 @@ const ImageMarket = () => {
             <h2>MARSHALL AMPS</h2>
           </a>
         </div>
-        <div id="ImageWrapper2">
+        <div id="ImageWrapper2" className="card">
           <a href="/">
             <img
               src="https://cdne-marshall-assets.azureedge.net/content/uploads/0aa7e4fb-0209-4b2c-a8fd-c442318d1727.jpg"
@@ -22,7 +22,7 @@ const ImageMarket = () => {
             <h2>NATAL DRUMS</h2>
           </a>
         </div>
-        <div id="ImageWrapper3">
+        <div id="ImageWrapper3" className="card">
           <a href="/">
             <img
               src="https://cdne-marshall-assets.azureedge.net/content/uploads/37b88a7c-ed57-4a10-94f7-394be6028b07.jpg"
@@ -31,7 +31,7 @@ const ImageMarket = () => {
             <h2>MARSHALL SHOP</h2>
           </a>
         </div>
-        <div id="ImageWrapper4">
+        <div id="ImageWrapper4" className="card">
           <a href="/">
             <img
               src="https://cdne-marshall-assets.azureedge.net/content/uploads/83d03a48-287d-40a2-8807-d87befcf1356.jpg"
@@ -40,7 +40,7 @@ const ImageMarket = () => {
             <h2>LIFESTYLE</h2>
           </a>
         </div>
-        <div id="ImageWrapper5">
+        <div id="ImageWrapper5" className="card">
           <a href="/">
             <img
               src="https://cdne-marshall-assets.azureedge.net/content/uploads/89162a6f-ff8a-46fa-aec3-1baeb996c62d.jpg"
@@ -49,7 +49,7 @@ const ImageMarket = () => {
             <h2>MARSHALL STUDIO</h2>
           </a>
         </div>
-        <div id="ImageWrapper6">
+        <div id="ImageWrapper6" className="card">
           <a href="/">
             <img
               src="https://cdne-marshall-assets.azureedge.net/content/uploads/1b317bf4-cdf4-44d5-ad36-33ea4cf2ed7b.jpg"
@@ -58,7 +58,7 @@ const ImageMarket = () => {
             <h2>MARSHALL RECORDS</h2>
           </a>
         </div>
-        <div id="ImageWrapper7">
+        <div id="ImageWrapper7" className="card">
           <a href="/">
             <img
               src="https://cdne-marshall-assets.azureedge.net/content/uploads/d31e04b1-ce8b-4b7d-8746-2b14775bbe10.jpg"
@@ -69,13 +69,13 @@ const ImageMarket = () => {
         </div>
       </div>
       <form className="ButtonsForm">
-        <a href='/'>
+        <a href="/">
           <button id="LiveMusicButton">Live For Music</button>
         </a>
-        <a href='/'>
+        <a href="/">
           <button id="HistoryButton">Marshall History</button>
         </a>
-        <a href='/'>
+        <a href="/">
           <button id="AboutButton">About</button>
         </a>
       </form>

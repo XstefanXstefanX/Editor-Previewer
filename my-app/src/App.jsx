@@ -1,6 +1,8 @@
 import Header from "./HEADER/Header";
 import ImageMarket from "./CONTENT/ImageMarket";
 import AnimatedP from "./CONTENT/AnimatedParagraphs";
+import Newsletter from "./CONTENT/Newsletter";
+
 const App = () => {
   return (
     <div className="App">
@@ -19,6 +21,8 @@ const App = () => {
       </div>
       <ImageMarket />
       <AnimatedP />
+      <Newsletter />
+      <div className="BLACKBLOCK">THE END IS NEAR...</div>
     </div>
   );
 };

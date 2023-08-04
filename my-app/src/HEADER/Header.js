@@ -6,7 +6,7 @@ import Dropdown from "./Dropdown";
 
 const Header = () => {
   const [drop, setDrop] = useState(false);
-  let indexMain = 0;
+
   return (
     <div id="nav-bar">
       <UpperHeader />
@@ -38,14 +38,23 @@ const Header = () => {
         </div>
       </header>
       <div className={`drop ${drop ? "show" : ""}`}>
-        <Dropdown value={menuItems[0].submenu}/>
-        {/*{menuItems.map((menuItem, index) => {
+        <div className="DropdownImage">
+          <img
+            src={menuItems.map((menuItem) => {
+              return menuItem.img_url;
+            })}
+          />
+        </div>
+        <div className="DropdownLinks">
+          <Dropdown value={menuItems[0].submenu} />
+          {/*{menuItems.map((menuItem, index) => {
           return (
             <div key={index}>
               <Dropdown value={menuItem.submenu} />
             </div>
           );
         })}*/}
+        </div>
       </div>
     </div>
   );
