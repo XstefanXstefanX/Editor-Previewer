@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBagShopping,
@@ -20,7 +19,8 @@ const UpperHeader = () => {
         <FontAwesomeIcon icon={faMagnifyingGlass} className="icon" />
       </li>
       <li>
-        <FontAwesomeIcon icon={faUser} className="icon" /> Sign in
+        <FontAwesomeIcon icon={faUser} className="icon" />
+        Sign up
       </li>
       <li>
         <FontAwesomeIcon icon={faBagShopping} className="icon" /> 0

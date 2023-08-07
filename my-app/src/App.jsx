@@ -2,12 +2,19 @@ import Header from "./HEADER/Header";
 import ImageMarket from "./CONTENT/ImageMarket";
 import AnimatedP from "./CONTENT/AnimatedParagraphs";
 import Newsletter from "./CONTENT/Newsletter";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SignUp from "./HEADER/SignUp";
 
 const App = () => {
   return (
     <div className="App">
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="./HEADER/SignUp" element={<SignUp />} />
+        </Routes>
+      </Router>
       {/*Still in need of some changes in Header :(*/}
-      <Header />
       <div className="videoContainer">
         <video autoPlay loop muted className="videoBg">
           <source
