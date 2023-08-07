@@ -1,7 +1,7 @@
 import React from "react";
 import UpperHeader from "./UpperHeader";
 import { useState } from "react";
-import { menuItems } from "../menuItems";
+import { menuItems } from "./menuItems";
 import Dropdown from "./Dropdown";
 
 const Header = () => {
